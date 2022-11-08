@@ -69,25 +69,63 @@
 
     <!-- section#portfolio>h1{portfolio} portfolio -->
 
-<section id="portfolio">
-    <h1>Portfolio</h1>
-<div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
-<div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
-<div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>         
+    <section id="portfolio">
+        <h1>Portfolio</h1>
+        <div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
+        <div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
+        <div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
 
-<!-- div.Portfolio-item*3>img -->
+        <!-- div.Portfolio-item*3>img -->
 
+    </section>
+    <!-- section#contact-->
 
-</section>
-<!-- section#contact-->
-<section id="contact">
-h1
+    <section id="contact">
 
+        <h1>RafalAndrzejczuk</h1>
+        <h2>Wawa 12-700
+            <br>Warszawska 14
+        </h2>
 
+        <body>
+            <!-- formularz do kontaktowy  -->
 
-
-
-</section>
+            <form class="form" action="mailto:rafalandrzejczuk1@gmial.com" method="post" novalidate
+                action="/send-scripts.php" id="contactForm">
+                <!-- Pole imienia -->
+                <div class="form-row">
+                    <label for="Fname">Imie i Nazwisko*:</label>
+                    <input type="text" name="fname" id="lname" required id="field-name" data-error="wypełnij pole"
+                        pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                </div>
+                <!-- Pole nazwiska -->
+                <div class="form-row">
+                    <label for="listy">Temat*:</label>
+                    <input type="text" name="lname" id="lname" required id="field-lname" data-error="wypełnij pole"
+                        pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+                </div>
+                <!--  pole wiadomosci-->
+                <div class="form-row">
+                    <label for="field-message">Message*</label>
+                    <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+                </div>
+                <!-- okienko wiadomosci -->
+                <div class="form-row">
+                    <label class="checkbox-cnt">
+                        <input type="checkbox" data-error="Musisz wypelnic pole" name="regulation">
+                        <i class="state" aria-hidden="true">  </i>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deleniti necessitatibus consequatur!</span>
+                    </label>
+                   </div>
+                   <!-- przycisk wyslij-->
+                   <div class="form-row">
+                       <button type="submit" class="submit-btn">
+                           Wyślij
+                       </button>
+                   </div>
+                </form>
+        </body>
+    </section>
 
 
 </body>
