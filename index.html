@@ -12,10 +12,10 @@
     <nav>
         <ul class="main">
             <!-- li.menu-item*4>a{about us} -->
-            <li class="menu-item"><a href="about-us">About us</a></li>
-            <li class="menu-item"><a href="skills">Skills</a></li>
-            <li class="menu-item"><a href="portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="contact">Contact</a></li>
+            <li class="menu-item"><a href="#about-us">About us</a></li>
+            <li class="menu-item"><a href="#skills">Skills</a></li>
+            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu-item"><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -23,54 +23,42 @@
     <section id="about-us"></section>
     <!--  h1{nagłowek} -->
     <h1>Nagłowek</h1>
-    przykładowy tekst
+    <p>przykładowy tekst</p>
 
     <!-- section#skills -->
-    <section id="skills"></section>
 
-    <!-- section#skills>h1{skills}>div.class*4>h1>p*4  -->
-    <skills>
-        <h1>skills
-            <div class="Skills">skill
-                <h1>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </h1>
-            </div>
-            <div class="Skills">skill
-                <h1>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </h1>
-            </div>
-            <div class="Skills">skill
-                <h1>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </h1>
-            </div>
-            <div class="Skills">skill
-                <h1>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </h1>
-            </div>
-        </h1>
 
-    </skills>
+    <!-- section#skills>h1{skills}>div.class*4>h1>p*4 Nie zaczynaj wartosci atrybotow duzymi literami i liczbami{value,placeholder } -->
+    <section id="skills">
+        <h2>skills </h2>
+        <div class="skills">
+            <h3> Naglowek</h3>
+            <p>Lorem, ipsum.</p>
+
+
+        </div>
+        <div class="skills">
+            <h4> Naglowek</h4>
+            <p>Lorem, ipsum.</p>
+
+        </div>
+        <div class="skills">
+            <h5>Naglowek</h5>
+            <p>Lorem, ipsum.</p>
+
+        </div>
+        <div class="skills">
+            <h6>Naglowek </h6>
+            <p>Lorem, ipsum.</p>
+
+        </div>
+
+    </section>
 
     <!-- section#portfolio>h1{portfolio} portfolio -->
 
     <section id="portfolio">
-        <h1>Portfolio</h1>
+        <h2>Portfolio</h2>
         <div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
         <div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
         <div class="portfolio-item"><img src="aaaaa.jpg" alt="pan"></img></div>
@@ -82,49 +70,47 @@
 
     <section id="contact">
 
-        <h1>RafalAndrzejczuk</h1>
-        <h2>Wawa 12-700
-            <br>Warszawska 14
-        </h2>
+        <h2>RafalAndrzejczuk</h2>
+        <address>Wawa 22-300<br>
+                 Sloneczna </address>
 
-        <body>
-            <!-- formularz do kontaktowy  -->
 
-            <form class="form" action="mailto:rafalandrzejczuk1@gmial.com" method="post" novalidate
-                action="/send-scripts.php" id="contactForm">
-                <!-- Pole imienia -->
-                <div class="form-row">
-                    <label for="Fname">Imie i Nazwisko*:</label>
-                    <input type="text" name="fname" id="lname" required id="field-name" data-error="wypełnij pole"
-                        pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-                </div>
-                <!-- Pole nazwiska -->
-                <div class="form-row">
-                    <label for="listy">Temat*:</label>
-                    <input type="text" name="lname" id="lname" required id="field-lname" data-error="wypełnij pole"
-                        pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
-                </div>
-                <!--  pole wiadomosci-->
-                <div class="form-row">
-                    <label for="field-message">Message*</label>
-                    <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
-                </div>
-                <!-- okienko wiadomosci -->
-                <div class="form-row">
-                    <label class="checkbox-cnt">
-                        <input type="checkbox" data-error="Musisz wypelnic pole" name="regulation">
-                        <i class="state" aria-hidden="true">  </i>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla deleniti necessitatibus consequatur!</span>
-                    </label>
-                   </div>
-                   <!-- przycisk wyslij-->
-                   <div class="form-row">
-                       <button type="submit" class="submit-btn">
-                           Wyślij
-                       </button>
-                   </div>
-                </form>
-        </body>
+        <!-- formularz do kontaktowy  -->
+
+        <form class="form" action="mailto:rafalandrzejczuk1@gmial.com" method="post" novalidate
+            action="/send-scripts.php" id="contactForm">
+            <!-- Pole imienia -->
+
+            <label for="Fname">Imie i Nazwisko*:</label>
+            <input type="text" name="fname" id="lname" required pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+
+            <!-- Pole nazwiska -->
+
+            <label for="listy">Temat*:</label>
+            <input type="text" name="lname" id="listy" required pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+
+            <!--  pole wiadomosci-->
+
+            <label for="field-message">Message*</label>
+            <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"
+                required></textarea>
+
+            <!-- okienko wiadomosci -->
+
+            <label class="checkbox-cnt">
+                <input type="checkbox" data-error="Musisz wypelnic pole" name="regulation">
+                <i class="state" aria-hidden="true" required> </i>
+                
+            </label>
+
+            <!-- przycisk wyslij-->
+
+            <button type="submit" class="submit-btn">
+                Wyślij
+            </button>
+
+        </form>
+
     </section>
 
 
