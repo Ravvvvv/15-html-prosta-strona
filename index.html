@@ -81,8 +81,8 @@
         <form class="form" action="mailto:rafalandrzejczuk1@gmial.com" method="post" novalidate id="contactForm">
             <!-- Pole imienia -->
 
-            <label for="Fname">Imie i Nazwisko*:</label>
-            <input type="text" name="fname" id="lname" required pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+            <label for="lname">Imie i Nazwisko*:</label>
+            <input type="text" name="lname" id="lname" required pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
 
             <!-- Pole nazwiska -->
 
@@ -93,13 +93,13 @@
 
             <label for="field-message">Message*</label>
             <textarea name="message" data-error="Musisz wypełnić pole" id="field-message"
-                pattern=".+"></textarea>
+               ></textarea>
 
             <!-- okienko wiadomosci -->
 
             <label class="checkbox-cnt">
                 <input type="checkbox" data-error="Musisz wypelnic pole" name="regulation">
-                <i class="state" aria-hidden="true" required> </i>
+                <input class="state" aria-hidden="true" required> </i>
 
             </label>
 
